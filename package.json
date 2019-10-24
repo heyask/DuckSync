@@ -1,0 +1,72 @@
+{
+  "name": "duck-sync",
+  "version": "1.0.0",
+  "description": "A simple file sync app.",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "electron-is-dev": "^1.1.0",
+    "fb-watchman": "^2.0.0",
+    "md5": "^2.2.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-hot-loader": "^4.12.15",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "customize-cra": "^0.8.0",
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0",
+    "install": "^0.13.0",
+    "npm": "^6.12.0",
+    "react-app-rewired": "^2.1.4",
+    "wait-on": "^3.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-nodemon": "nodemon --exec electron .",
+    "electron": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "build": {
+    "productName": "DuckSync",
+    "icon": "build/icon.icns",
+    "appId": "com.aivesoft.ducksync",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
+  "repository": "https://github.com/heyask/DuckSync",
+  "keywords": [
+    "Sync",
+    "File",
+    "Dropbox",
+    "Backup"
+  ],
+  "author": "aivesoft",
+  "license": "CC0-1.0",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
