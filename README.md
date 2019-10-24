@@ -1,5 +1,7 @@
 # 🐥 DuckSync
 
+![release version](https://img.shields.io/github/v/release/heyask/DuckSync)
+
 A simple file sync app based on watchman, rsync.
 
 ![screenshot](./misc/screenshot.png)
