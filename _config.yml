@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+show_downloads: true
+
+github:
+  dmg_url: https://github.com/heyask/DuckSync/releases/download/1.0.0/DuckSync.dmg
