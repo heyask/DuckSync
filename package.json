@@ -19,7 +19,7 @@
   "devDependencies": {
     "concurrently": "^5.0.0",
     "customize-cra": "^0.8.0",
-    "electron": "^7.0.0",
+    "electron": "^11.5.0",
     "electron-builder": "^21.2.0",
     "install": "^0.13.0",
     "npm": "^6.12.0",
